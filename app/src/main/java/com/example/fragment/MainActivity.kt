@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment) {
        val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.FrameLayout,fragment)
+        fragmentTransaction.replace(R.id.FrameLayout,fragment) // FrameLayout is the layout where fragments needed to appear and this is that ID
         fragmentTransaction.commit()
     }
 }
